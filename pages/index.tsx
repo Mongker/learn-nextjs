@@ -1,11 +1,13 @@
+import React from 'react';
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-
-export default function Home() {
+const Home: React.FC = () => {
+  // Bước 1: khai báo biến trong tsx
+  let first: string = 'mong';
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Create Next App: {first}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -62,4 +64,5 @@ export default function Home() {
       </footer>
     </div>
   )
-}
+};
+export default Home;
